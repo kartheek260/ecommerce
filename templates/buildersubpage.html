@@ -1,0 +1,231 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HP:Partners</title>
+	<link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %}">
+	<script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' %}"></script>
+	<script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/dealersubpage.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/submenu.css' %}" type="text/css" media="all" />
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+</head>
+<body>
+    <!-- Header -->
+	<div id="head" class="container-fluid" >
+		<a href="index.html"><img src="{% static 'images/logo.png' %}"/></a>
+		<span>
+			<div class="dropdown">
+				<button class="dropbtn">Home <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="buyres.html">Buy</a>
+					<a href="rentres.html">Rent</a>
+                    <a href="leaseres.html">Lease</a>
+					<a href="builders.html">Partners</a>
+				</div>
+			</div>
+		</span>
+		<div id="d2">
+			<select >
+				<option>Property Type</option>
+				<option>Commerical Property</option>
+				<option>Residential Property </option>					
+			</select>
+			<input id="locationTextField" type="text" placeholder="Type Location or Project/City" />
+			<input type="button" class="btn btn-primary" value="search"/>
+		</div>	
+		<ul id="s1">	
+			<li class="dropdown menu">
+				<a class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars fa-lg" style="color:white;"></i></a>				   
+				<ul style="margin-left:-80px;" class="dropdown-menu agile_short_dropdown">
+					<li><a href="profile.html">My Profile</a></li>
+					<li><a  href="shortlist.html">My Shortlist</a></li>				
+					<li><a  href="sell.html">Sell/Rent Property</a></li>				
+					<li><a  href="news.html">News</a></li>
+					<li><a href="price.html">Price Trends</a></li>	
+				</ul>						
+			</li>
+		</ul>							
+    </div>
+    <!-- //Header -->
+    
+    <!-- Body -->
+    <br><br>
+    <form>
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="container">
+					<div class="col-md-2 col-sm-2"></div>
+					<div class="col-md-8 col-sm-8 sub_head">
+						<div>
+							<img src="{% static 'images/dlf.jpg' %}" class="img-responsive" alt=" ">
+							<div class="panel">
+								<div class="panel-body">
+									<p> Property types dealing in Residential Apartment, Independent House/Villa, Studio Apartment, Residential Land, Commercial Office/Space, Hotel/Resorts, Commercial Shops, Commercial Land/Inst. Land, Commercial Showrooms, Industrial Lands/Plots, Office in IT Park.</p>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="container-fluid">
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#home">Properties</a></li>
+								<li><a data-toggle="tab" href="#company">Company</a></li>
+								<li><a data-toggle="tab" href="#contact">Contact</a></li>
+								<li><a data-toggle="tab" href="#moreinfo">More Info</a></li>
+							</ul>
+							<div class="tab-content">
+								<div id="home" class="tab-pane fade in active">
+									<h3>Total Properties</h3>
+									<div class="col-md-12">
+										<div class="middle">
+											<p><b>Rs.2Lac/month <a>Office Space on Main Road 7th Floor@ Madhapur Hyderabad</a></b></p>
+											<div class="col-md-2">
+											<img src="{% static 'images/home3.jpg' %}">
+											<figcaption><a>5Photos & 1Video</a></figcaption>
+											</div>
+											<div class="col-md-6 middle_des">
+												<span>
+													<b>&nbsp; Super built-up Area</b> : 1345Sq.Ft. @ RS.2600/Sq.Ft
+													<b>&nbsp;&nbsp;Society</b>:Rv Kaustuba<br>
+													<b>&nbsp;&nbsp;Highlights</b>: On Rent/0 to 1 year &nbsp;&nbsp;old/2nd floor (out of 5)
+												</span>
+												<hr/>
+												<span>
+													<b>&nbsp;&nbspDescription:</b>Sree shakti arcade, located in &nbsp;&nbsp; hyderabad, is one of the residential cum commercial &nbsp;&nbsp;developments of sree shakti deve... 
+													<hr>
+													<b>&nbsp;&nbsp;Builder:</b>Sree shakti Developers <b>Posted</b> Nov 18,2017
+												</span>
+												<a style="color:white" class="btn btn-primary" data-toggle="popover" title="Want to Contact our Customer Care Executive:" data-content="+999888444333">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+												<span id="p1"><i id="hide" class="fa fa-star-o  fa-2x" aria-hidden="true"></i>Shortlist</span>
+                                                <span id="p2"><i id="show" class="fa fa-star  fa-2x" aria-hidden="true"></i>Shortlisted</span>&nbsp;&nbsp;
+                                            </div>
+										</div>
+									</div>
+									<hr/><hr/>
+									<div class="col-md-12">
+										<div class="middle">
+											<p><b>Rs.2Lac/month <a>Office Space on Main Road 7th Floor@ Madhapur Hyderabad</a></b></p>
+											<div class="col-md-2">
+											<img src="{% static 'images/home3.jpg' %}">
+											<figcaption><a>5Photos & 1Video</a></figcaption>
+											</div>
+											<div class="col-md-6 middle_des">
+												<span>
+													<b>&nbsp; Super built-up Area</b> : 1345Sq.Ft. @ RS.2600/Sq.Ft
+													<b>&nbsp;&nbsp;Society</b>:Rv Kaustuba<br>
+													<b>&nbsp;&nbsp;Highlights</b>: On Rent/0 to 1 year &nbsp;&nbsp;old/2nd floor (out of 5)
+												</span>
+												<hr/>
+												<span>
+													<b>&nbsp;&nbsp;Description:</b>Sree shakti arcade, located in &nbsp;&nbsp;hyderabad, is one of the residential cum commercial &nbsp;&nbsp;developments of sree shakti deve... 
+													<hr>
+													<b>&nbsp;&nbsp;Builder:</b>Sree shakti Developers <b>Posted</b> Nov 18,2017
+												</span>
+												<input type="button" class="btn btn-primary" value="Contact Us "/>&nbsp;&nbsp;&nbsp;&nbsp;
+												<i class="fa fa-star" aria-hidden="true"></i>Shortlist&nbsp;&nbsp;&nbsp;&nbsp;	
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="company" class="tab-pane fade">
+									<h3>Narayan deals in</h3>
+									<hr>
+									<h4><i class="fa fa-home">Localities dealing in</i></h4>
+									<p>Aundh, Hinjewadi, Dhayari, Mayur Colony, Bhugaon, Hinjewadi Phase 1, Kondhawe Dhawade, Model Colony, Nana Nagar, Pashan, Baner, Kirkatwadi, Budhwar Peth, Ravet, Dhayari Phata , Nandel Fata, Pimple Saudagar, Bibwewadi, Chakan, Law College Road, Kothrud, Niranjan Park, Mitra Mandal Colony, Sinhgad Road, Ganesh Nagar, Narhe, Chikkalvadi, Dattanagar, Anand Nagar, Sai Nagar, Bavdhan, Wakadkar Wasti, Pune Mumbai Highway, Balewadi, Dhankawadi, Shivaji Nagar, Khed Shivapur, Bharati Vidyapeeth, Clover Park, Sathe Colony, Khed Shivapur Road, J.M Road, Laxmi Road, Katraj, Kharadi.</p>
+									<br>
+									<h4>Property types dealing in</h4>
+									<p> Residential Apartment, Independent House/Villa, Studio Apartment, Residential Land, Commercial Office/Space, Hotel/Resorts, Commercial Shops, Commercial Land/Inst. Land, Commercial Showrooms, Industrial Lands/Plots, Office in IT Park</p>
+								</div>
+								<div id="contact" class="tab-pane fade">
+									<h3>Company Address:</h3>
+									<p> C-29, Shreenath Plaza, Dnyaneshwar Paduka Chowk, F C Road, Shivaji Nagar, Pune, Maharashtra 411005
+								   Phone: 085549 82203
+									</p>
+								</div>
+								<div id="moreinfo" class="tab-pane fade">
+									<h3>Ask & Answer:</h3>
+									<textarea rows="4" cols="50"></textarea>
+									<br>
+									<button type="submit" value="submit">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+	</form>
+    <!-- //Body -->
+    
+    <!-- footer -->
+    <br/><br/><br/>
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">Hello Properties</a></h2>
+            <h3>Subscribe To Our Newsletter</h3>
+			<p class="footer_paragraph">Subscribe to our newsletter and we will inform you about newest projects and promotions.</p>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2018 Hello Poperties. All rights reserved | Design by <a href="#">Epitychis Info Labs Pvt.Ltd</a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+    
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+    
+    <!-- autocomplete search -->
+    <script src="{% static 'http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&region=in' %}"  type="text/javascript"></script>
+    <script src="{% static 'js/auto-search.js' %}"></script>
+	<!-- //autocomplete search -->
+    
+    <!-- buttons -->
+	<script src="{% static 'js/buttons.js' %}"></script>
+    <!-- //buttons -->
+
+</body>
+</html>

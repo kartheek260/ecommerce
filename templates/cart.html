@@ -1,0 +1,96 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %} " rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+{#    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">#}
+	<!-- //font-awesome icons -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+
+</head>
+ <body style="background-color: #2ca8ff">
+	<!-- header -->
+	<div class="header">
+		<div class="main_header">
+			<div class="header_nav">
+				<nav class="navbar navbar-default">
+					<div class="collapse navbar-collapse navbar-right" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="http://127.0.0.1:8001">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">TRACK <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="../buyres.html">ORDER STATUS</a></li>
+                                        <li><a href="buycomm.html">CANCEL ORDER</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="http://127.0.0.1:8001/cartapp/viewcart/">CART <b class="caret"></b></a>
+                                </li>
+							    <li><a href="">Orders</a></li>
+                                <li><a href="http://127.0.0.1:8001/authapp/my_logout/">logout</a></li>
+							</ul>
+						</nav>
+				    </div>
+				</nav>
+            <form method="GET">
+{#<table border="1" align="center" >#}
+{#{% if  %}#}
+{#        <h1>username</h1>#}
+{#        <h2>pid</h2>#}
+{#        <h3>units</h3>#}
+{#        <h4>unitprice</h4>#}
+{#        <h5>tuprice</h5>#}
+{#        <h6>image</h6>#}
+    <div class="column">
+    <div class="col-sm-12">
+    {% for q in records %}
+        <h1>{{ q.username }}</h1>
+        <h2>product:{{ q.pid }}</h2>
+        <h6><img src="{{ q.image.url }}"style="width:100px"></h6>
+        <h2>Number Of Units:{{ q.units }}</h2>
+        <h2>Each Price:{{ q.unitprice }}</h2>
+        <h2>Total Price:{{ q.tuprice }}</h2>
+        <h2><button><a href="http://127.0.0.1:8001/cartapp/delete/?id={{ q.id }}&pid={{ q.pid }}&units={{ q.units }}">Delete</a></button></h2>
+        <h2><button><a href="http://127.0.0.1:8001/cartapp/modify/?id={{ q.id }}&pid={{ q.pid }}&units={{ q.units }}&unitprice={{ q.unitprice }}&tuprice={{ q.tuprice }}">Modify</a></button></h2>
+        <h2><button><a href="http://127.0.0.1:8001/cartapp/cancel?pid={{ q.pid }}">Cancel</a></button></h2>
+        <h2><button><a href="http://127.0.0.1:8001/checkout/">BUY NOW</a></button></h2>
+    </div>
+
+</div>
+{% endfor %}
+            </form>
+</body>
+</html>
+

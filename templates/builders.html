@@ -1,0 +1,537 @@
+{% load statisfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HP:Partners</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/menubar.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/dealers.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+	<!-- //font-awesome icons -->
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="main_header">
+			<div class="header_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbart">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="{% static 'images/logo.png' %}" alt="HP"/></a>
+					</div>
+					
+					<div class="collapse navbar-collapse navbar-right" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="buyres.html">Residential</a></li>
+										<li><a href="buycomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rent <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="rentres.html">Residential</a></li>
+										<li><a href="rentcomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lease <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="leaseres.html">Residential</a></li>
+										<li><a href="leasecomm.html">Commercial</a></li>
+									</ul>
+								</li><li class="dropdown active">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="dealers.html">Dealers</a></li>
+										<li><a href="#">Builders</a></li>
+									</ul>
+								</li>
+								<li><a href="login.html">Login/Register</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars fa-1x" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="profile.html">My Profile</a></li>
+										<li><a href="shortlist.html">My Shortlist</a></li>
+										<li><a href="sell.html">Sell/Rent Property</a></li>
+										<li><a href="news.html">News</a></li>
+										<li><a href="price.html">Price Trends</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				    </div>	
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- header -->
+    
+	<!--sub_menu-->
+	<div class="second_nav">
+		<div class="scnd_nav_inner">
+			<ul class="scnd_nav_list">
+				<li><a href="index.html">Home</a><span>|</span></li>
+				<li>Partners<span>|</span></li>
+				<li>Builders</li>
+			</ul>
+		</div>
+	</div>
+	<!--//sub_menu-->
+    
+	<!-- body -->
+    <div class="dealers_body">
+	<br/>
+	   <div class="container">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<h3>Property Builders</h3>
+				<div class="a">
+                    <div class="b">
+                        <div class="c"></div>
+                    </div>
+                    <div class="d">
+                        <div class="e">
+                            <ul class="f">
+                                <li>
+                                    <input type="checkbox" name="location1">
+                                    <span>Ahmedabad</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location2">
+                                    <span>Banglore</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location3">
+                                    <span>Bhadurghad</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location4">
+                                    <span>Bhopal</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location5">
+                                    <span>Bhinadi</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location6">
+                                    <span>Chandigarh</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location7">
+                                    <span>Chattisgarh</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location8">
+                                    <span>Chennai</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location9">
+                                    <span>Coimbatore</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location10">
+                                    <span>Delhi</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location11">
+                                    <span>Dharuheda</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location12">
+                                    <span>Faridhabad</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location13">
+                                    <span>Ghaziabad</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location14">
+                                    <span>Greater Nodia</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location15">
+                                    <span>Guragon</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location16">
+                                    <span>Hyderabad</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="location17">
+                                    <span>Indore</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location18">
+                                    <span>Jaipur</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="location19">
+                                    <span>Kochi</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location20">
+                                    <span>Mangalore</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="location21">
+                                    <span>Mumbai</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location22">
+                                    <span>Nagpur</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="location23">
+                                    <span>Noida</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location24">
+                                    <span>Pune</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="location25">
+                                    <span>Thane</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location26">
+                                    <span>Trivandrum</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="location27">
+                                    <span>Udiapur</span>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" name="location28">
+                                    <span>Vijayawada</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<br><br>
+		<div class="container">
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+					<div class="dealers">
+                        <div class="dlr_img">
+                            <img src="{% static 'images/dlf.jpg' %}"/>
+                        </div>
+                        <hr/>
+						<div class="dlr_info">
+                            <div class="dlr_name">
+                                <h4>DLF</h4>
+                            </div>
+                            <div class="dlr_loc">
+                                <p>Pune</p>
+                            </div>
+                            <div class="dlr_prop">
+                                <span>Total Project 94</span><br>
+                                <span>431 Lands</span><br>
+                                <span>Experiance 72 Years</span>
+                            </div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					   <img src="{% static 'images/unitech.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+						<h4>UNITECH</h4>
+                        </div>
+                        <div class="dlr_loc">
+						<p>Pune</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 116</span><br>
+                            <span>5 Plots</span><br>
+                            <span>Experiance 47 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					<img src="{% static 'images/omaxe.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+                            <h4>OMAXE</h4>
+                        </div>
+                        <div class="dlr_loc">
+                            <p>Delhi / NCR</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 98</span><br>
+                            <span>43 House/Villas</span><br>
+                            <span>Experiance 47 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					<img src="{% static 'images/prestige.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+                            <h4>Prestige Group</h4>
+                        </div>
+                        <div class="dlr_loc">
+                            <p>Pune</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 134</span><br>
+                            <span>10 Lands</span><br>
+                            <span>Experiance 34 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					   <img src="{% static 'images/ansal.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+						<h4>Ansal API</h4>
+                        </div>
+                        <div class="dlr_loc">
+						<p>Pune</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 103</span><br>
+                            <span>8 House/Villa</span><br>
+                            <span>Experiance 52 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+					<div class="dealers">
+                        <div class="dlr_img">
+                            <img src="{% static 'images/dlf.jpg' %}"/>
+                        </div>
+                        <hr/>
+						<div class="dlr_info">
+                            <div class="dlr_name">
+                                <h4>DLF</h4>
+                            </div>
+                            <div class="dlr_loc">
+                                <p>Pune</p>
+                            </div>
+                            <div class="dlr_prop">
+                                <span>Total Project 94</span><br>
+                                <span>431 Lands</span><br>
+                                <span>Experiance 72 Years</span>
+                            </div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					   <img src="{% static 'images/unitech.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+						<h4>UNITECH</h4>
+                        </div>
+                        <div class="dlr_loc">
+						<p>Pune</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 116</span><br>
+                            <span>5 Plots</span><br>
+                            <span>Experiance 47 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					<img src="{% static 'images/omaxe.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+                            <h4>OMAXE</h4>
+                        </div>
+                        <div class="dlr_loc">
+                            <p>Delhi / NCR</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 98</span><br>
+                            <span>43 House/Villas</span><br>
+                            <span>Experiance 47 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					<img src="{% static 'images/prestige.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+                            <h4>Prestige Group</h4>
+                        </div>
+                        <div class="dlr_loc">
+                            <p>Pune</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 134</span><br>
+                            <span>10 Lands</span><br>
+                            <span>Experiance 34 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<a href="buildersubpage.html">
+				<div class="dealers">
+                    <div class="dlr_img">
+					   <img src="{% static 'images/ansal.jpg' %}"/>
+                    </div>
+                    <hr/>
+					<div class="dlr_info">
+                        <div class="dlr_name">
+						<h4>Ansal API</h4>
+                        </div>
+                        <div class="dlr_loc">
+						<p>Pune</p>
+                        </div>
+                        <div class="dlr_prop">
+                            <span>Total Project 103</span><br>
+                            <span>8 House/Villa</span><br>
+                            <span>Experiance 52 Years</span>
+                        </div>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+        <br/><br/>
+	</div>
+	<!-- //body -->
+    
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">Hello Properties</a></h2>
+			<h3>Subscribe To Our Newsletter</h3>
+			<p class="footer_paragraph">Subscribe to our newsletter and we will inform you about newest projects and promotions.</p>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2018 Hello Properties. All rights reserved | Design by <a href="#">Epitychis Info Labs Pvt.Ltd</a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+    
+	<script src="{% static  'js/jquery-2.1.4.min.js' %}"></script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static  'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script src="{% static '/bootstrap.js' %}"></script>
+    
+	<!-- autocomplete search -->
+    <script src="{% static 'http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&region=in' %}"  type="text/javascript"></script>
+    <script src="{% static 'js/auto-search.js' %}"></script>
+	<!-- //autocomplete search -->
+    
+</body>
+</html>

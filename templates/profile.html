@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HP:My Profile</title>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/profile.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- //font-awesome icons -->
+    <link rel="stylesheet" href="css/submenu.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <!--header-->
+    <div id="head" class="container-fluid" >
+		<a href="index.html"><img src="images/logo.png"/></a>
+		<span>
+			<div class="dropdown">
+				<button class="dropbtn">Home <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="buyres.html">Buy</a>
+					<a href="rentres.html">Rent</a>
+                    <a href="leaseres.html">Lease</a>
+					<a href="dealers.html">Partners</a>
+				</div>
+			</div>
+		</span>
+		<div id="d2">
+			<select >
+				<option>Property Type</option>
+				<option>Commerical Property</option>
+				<option>Residential Property </option>					
+			</select>
+			<input id="locationTextField" type="text" placeholder="Type Location or Project/City" />
+			<input type="button" class="btn btn-primary" value="search"/>
+		
+		<ul id="s1">	
+			<li class="dropdown menu" >
+				<a id="a1" class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-user-circle fa-2x" aria-hidden="true" style="color:antiquewhite;"></i></a>				   
+				<ul style="margin-left:-180px;" class="dropdown-menu agile_short_dropdown">
+					<li><a href="#">My Profile</a></li>
+					<li><a  href="shortlist.html">My Shortlist</a></li>
+                    <li><a  href="#">Sign Out</a></li>
+				</ul>						
+			</li>
+		</ul>
+     </div>			
+    </div>
+    <!--//header-->
+    
+    <!-- body -->
+    <div class="container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-7">
+            <div class="prof_body">
+                <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						<div class="hidden-xs"><b>My Profile</b></div>
+					</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab">
+						<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+						<div class="hidden-xs"><b>Edit</b></div>
+					</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
+						<span class="fa fa-key" aria-hidden="true"></span>
+						<div class="hidden-xs"><b>Change Password</b></div>
+					</button>
+                    </div>
+                </div>
+                <div class="well">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tab1">
+                            <div style="margin-left:150px;">
+                                Name : <input type="text" value="" readonly placeholder="Arun" style="margin-top:30px;margin-left:33px"><br> Mail Id : <input type="text" value="" readonly placeholder="arun@yahoo.co.in" style="margin-top:30px;margin-left:29px"><br> 
+                                Phn No : <input type="text" value="" readonly placeholder="+919640302030" style="margin-top:30px;margin-left:24px;"><br> 
+                                You Are a:<input type="text" value="" readonly placeholder="Owner" style="margin-top:30px;margin-left:17px">
+                                <br><br><br>
+                                <a href="#"><input type="button" class="btn btn-primary" value="Edit Profile" id="b1" style="margin-left:100px;padding:10px; padding-left:20px; padding-right:20px;"></a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                            <div>
+                                <div style="margin-left:150px;">
+                                    Name : <input type="text" placeholder="Enter Your Name" style="margin-top:30px;margin-left:36px"><br>
+                                    Mail Id : <input type="text" placeholder="Enter Your Mail Id" style="margin-top:30px;margin-left:33px"><br> Phn No:
+                                    <select style="margin-left:33px; cursor: pointer; padding-top:4px;padding-bottom:3px; padding-left:5px;">
+									<option>IND+91</option>
+									<option>USA+1</option>
+									<option>ARE+971</option>
+								</select>
+                                    <input type="text" placeholder="Enter Your Phn No" style="margin-top:31px;margin-left:20px;"><br>
+                                    Address : <input type="text" placeholder="Enter Your Address" style="margin-top:30px; margin-left:24px"><br><br> 
+                                    You Are a:
+                                    <select style="margin-left:18px; padding-top:4px;padding-bottom:3px; padding-left:5px; cursor: pointer;">
+									<option>Owner</option>
+									<option>Buyer</option>
+									<option>Builder</option>
+									<option>Dealer</option>
+								</select>
+                                    <br><br>
+                                    <a href="#"><input type="button" class="btn btn-primary" value="Save" id="b1" style="margin-left:50px; padding:10px; padding-left:50px; padding-right:50px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3">
+                            <div style="text-align:center;">
+                                Current Pasword: <input type="text" placeholder="Current Password" style="margin-top:30px; margin-left:31px;"><br> New Password: <input type="text" placeholder="New Password" style="margin-top:30px; margin-left:42px"><br> Confirm Password: <input type="text" placeholder="confirm Your Password" style="margin-top:30px; margin-left:20px"><br><br><br><br><br>
+                                <a href="#"><input type="button" class="btn btn-primary" value="Save" id="b1" style="margin-left:50px; padding:10px; padding-left:50px; padding-right:50px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div style="margin-left:-14px;" id="add">
+                <h1 style="background-color:#acd9f9;font-size:20px; margin-top:0px; text-align:center;" ;><b>I want to Buy / Rent</b></h1>
+                <p style="font-size:18px; margin-left:60px;"><b>Property Search</b></p>
+                <img src="images/p1.png" style="float:left; margin-top:-30px; margin-left:5px;" width="50px" height="70px">
+                <p style="font-size:18px;margin-left:60px;">Over 1,00,000 properties live on Hello Properties.. <a href="buyres.html">Search</a></p>
+                <br/>
+                <p style="font-size:18px; margin-left:60px;"><b>Dealer Search</b></p>
+                <img src="images/p2.jpg" style="margin-top:-30px; margin-left:5px; float:left;" width="40px" height="70px">
+                <p style="font-size:18px;margin-left:60px;">Get in touch with agents, brokers, builders others professionals.<br>
+                    <a href="dealers.html">Find an expert</a></p>
+            </div>
+        </div>
+        <div style="margin-right:-100px" id="add1">
+            <h1 style="background-color:#acd9f9;font-size:20px; margin-top:0px; text-align:center;" ;><b>I want to Sell / Rent out</b></h1>
+            <p style="font-size:18px; margin-left:60px;"><b>Advertise Your Property</b></p>
+            <img src="images/p3.jpg" style="margin-top:-30px; margin-left:5px; float:left;" width="50px" height="70px">
+            <p style="font-size:18px;margin-left:60px;">Get one listing free and Sell / Rent your property. <a href="sell.html">Advertise it here</a></p>
+            <br>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <!-- //body -->
+    <br/><br/><br/>
+   <!-- footer --><br/><br/><br/>
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">Hello Properties</a></h2>
+			<h3>Subscribe To Our Newsletter</h3>
+			<p class="footer_paragraph">Subscribe to our newsletter and we will inform you about newest projects and promotions.</p>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2018 Hello Properties. All rights reserved | Design by <a href="#">Epitychis Info Labs Pvt.Ltd </a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+	
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+
+    </script>
+    <!-- start-smooth-scrolling -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+
+    </script>
+    <!-- //here ends scrolling icon -->
+    <script src="js/bootstrap.js"></script>
+    
+    <!-- Profile -->
+    <script src="js/profile.js"></script>
+    <script src="js/profile1.js"></script>
+    <script src="js/profile2.js"></script>
+    <script src="js/profile3.js"></script>
+    <!-- //Profile -->
+    
+    <!-- autocomplete search -->
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&region=in"  type="text/javascript"></script>
+		<script src="js/auto-search.js"></script>
+	<!-- //autocomplete search -->
+    
+</body>
+</html>

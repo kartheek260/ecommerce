@@ -1,0 +1,95 @@
+{% extends 'includes/header.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<lang="en">
+{% block content %}
+<head>
+
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Icons font CSS-->
+    <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">
+    	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %} " rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+	<!-- //font-awesome icons -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+</head>
+
+<body style="background-color: #00acee">
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+{#                <!-- Conditionally display Sign In or Sign Out -->#}
+{#                 <% if(User.Identity.IsAuthenticated){ %><b>Sign Out</b><% }#}
+{#                    else { %>#}
+{#                        <b>Sign In</b>#}
+{#                    <% } %>#}
+             <h1 align="center" color="blue"><strong>signin</strong></h1>
+                 <div class="card-body">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+{#                    <div class="form-row">#}
+{#                        <div class="name">Email</div>#}
+{#                        <div class="value">#}
+{#                                <div class="input-group">#}
+{#                                    <input class="input--style-5" type="email" name="email">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    <div class="form-row">#}
+{#                        <div class="name">Password</div>#}
+{#                        <div class="value">#}
+{#                            <div class="input-group">#}
+{#                                <input class="input--style-5" type="Password" name="Password">#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+
+                        <div>
+                             <button class="btn btn--radius-2 btn--red" type="submit" value="submit">signin</button>
+                            <button class="btn btn--radius-2 btn--red" type="cancel" value="submit">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'js/global.js' %}"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+{% endblock %}
+</html>
+<!-- end document-->

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HP:Price Trends</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap-css -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/menubar.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/dealers.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/price.css" type="text/css"   media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- //font-awesome icons -->
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="main_header">
+			<div class="header_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbart">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="HP"/></a>
+					</div>
+					
+					<div class="collapse navbar-collapse navbar-right" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="buyres.html">Residential</a></li>
+										<li><a href="buycomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rent <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="rentres.html">Residential</a></li>
+										<li><a href="rentcomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lease <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="leaseres.html">Residential</a></li>
+										<li><a href="leasecomm.html">Commercial</a></li>
+									</ul>
+								</li><li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="dealers.html">Dealers</a></li>
+										<li><a href="builders.html">Builders</a></li>
+									</ul>
+								</li>
+								<li><a href="login.html">Login/Register</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars fa-1x" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="profile.html">My Profile</a></li>
+										<li><a href="shortlist.html">My Shortlist</a></li>
+										<li><a href="sell.html">Sell/Rent Property</a></li>
+										<li><a href="news.html">News</a></li>
+										<li><a href="#">Price Trends</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				    </div>	
+				</nav>
+				<form action="#" method="post">
+					<input type="text" placeholder="Search....">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+    
+	<!--sub_menu-->
+	<div class="second_nav">
+		<div class="scnd_nav_inner">
+			<ul class="scnd_nav_list">
+				<li><a href="main.html">Home</a><span>|</span></li>
+				<li>Price Trends</li>
+			</ul>
+		</div>
+	</div>
+	<!--//sub_menu-->
+    
+	<br/><br/>
+	<!-- body -->
+	<div class="container-fluid" >
+		<div class="col-md-2 col-sm-1"></div>
+		<div class="col-md-8 col-sm-10 col-xs-12">
+			<br><br>
+			<h3>Price Trends</h3>
+			<hr/>
+			<span>You have Selected:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="drop">
+                <option class="scroll" value="" style="height:40px;">Any Location</option>
+                <option value="">Ahmedabad</option>    
+                <option value="">Banglore</option>
+                <option value="">Bhadurghad</option>
+                <option value="">Bhopal</option>
+                <option value="">Bhinadi</option>        
+                <option value="">Chandigarh</option>
+                <option value="">Chattisgarh</option> 
+                <option value="">Chennai</option>
+                <option value="">Coimbatore</option> 
+                <option value="">Delhi</option>      
+                <option value="">Dharuheda</option>
+                <option value="">Faridhabad</option>
+                <option value="">Ghaziabad</option>    
+                <option value="">Greater Nodia</option>
+                <option value="">Guragon</option>
+                <option value="">Hyderabad</option>
+                <option value="">Indore</option>      
+                <option value="">Jaipur</option>
+                <option value="">Kochi</option>         
+                <option value="">Mangalore</option>
+                <option value="">Mumbai</option> 
+                <option value="">Nagpur</option>
+                <option value="">Nodia</option>
+                <option value="">Pune</option>
+                <option value="">Thane</option>
+                <option value="">Trivandrum</option> 
+                <option value="">Udaipur</option>	
+                <option value="">Vijayawada</option>
+            </select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a id="candidate1" href="#" class="people">
+                <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>Buy
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a id="candidate2" href="#" class="people">
+                <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>Rent
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="col-md-2 col-sm-1"></div>
+    </div>
+    <span class="headll"></span>
+	<div class="container">
+        <div class="col-md-2 col-sm-1"></div>
+		<div class="col-md-8 col-sm-10 col-xs-12 bod">
+			<div id="list1">
+			     <h4>Localities in Hyderabad:</h4>
+			     <table>
+                    <tr>
+                       <th>Localities</th>
+                       <th colspan="2">Buy Rates</th>
+                    </tr>
+                    <tr bgcolor="#acd9f9">
+                        <td>Localities(35)</td>
+                        <td>Price Range</td>
+                        <td>Q/Q</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>
+                            <a id="myBtn" style="text-decoration:none; cursor: pointer;">20%</a>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content" style="width:50%; cursor: pointer;">
+                                    <span class="close">&times;</span>
+                                    <div id="chartContainer" style="height: 400px; width: 300%;"></div>
+                                    <h6 align="center"><b>x</b> : Every Month&nbsp;&nbsp;&nbsp;&nbsp;<b>y</b> : price per sq.meter(in thousands)</h6>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4th Phase KPHB</td>
+                        <td>-</td>
+                        <td>
+                            <a id="myBtnn" style="text-decoration:none; cursor: pointer;">20%</a>
+                            <!-- The Modal -->
+                            <div id="myModaln" class="modal">
+                            <!-- Modal content -->
+                                <div class="modal-content" style="width:50%;">
+                                    <span class="close">&times;</span>
+                                    <div id="chartContainer" style="height: 300px; width: 30%;"></div>
+                                    <h6 align="center"><b>x</b> : Every Month&nbsp;&nbsp;&nbsp;&nbsp;<b>y</b> : price per sq.meter(in thousands)</h6>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>
+                            <a id="myBtnx" style="text-decoration:none; cursor: pointer;">20%</a>
+                            <!-- The Modal -->
+                            <div id="myModalx" data-toggle="modal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content" style="width:50%;">
+                                    <span class="close">×</span>
+                                    <div id="chartContainer" style="height: 300px; width: 30%;"></div>
+                                    <h6 align="center"><b>x</b> : Every Month&nbsp;&nbsp;&nbsp;&nbsp;<b>y</b> : price per sq.meter(in thousands)</h6>
+                                </div>
+                            </div>        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 2,805 - 3,145/sq. ft</td>
+                        <td>12%</td>
+                    </tr>
+			     </table>
+			</div>
+            <div id="list2">	
+                <table>
+                    <tr>
+                        <th>Localities</th>
+                        <th colspan="2">Rent Rates</th>
+                    </tr>
+                    <tr bgcolor="#acd9f9">
+                        <td>Localities(35)</td>
+                        <td>1Bedroom</td>
+                        <td>2Bedroom</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Phase KPHB</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>Alkapuri</td>
+                        <td>-</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                    <tr>
+                        <td>AS Rao Nagar</td>
+                        <td>Rs. 15,646 - 20,185</td>
+                        <td>Rs. 20,952 - 22,185</td>
+                    </tr>
+                </table>
+		    </div>
+		</div>
+        <div class="col-md-2 col-sm-1"></div>
+    </div>
+	<!-- //body -->
+    
+	<br/><br/>
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">Hello Properties</a></h2>
+			<h3>Subscribe To Our Newsletter</h3>
+			<p class="footer_paragraph">Subscribe to our newsletter and we will inform you about newest projects and promotions.</p>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2017 Hello Properties. All rights reserved | Design by <a href="#">Epitychis Info Labs Pvt.Ltd</a></p>
+		</div>
+	</div>
+    <!-- //footer -->
+    
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script src="js/bootstrap.js"></script>
+    
+	<!-- autocomplete search -->
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&region=in"  type="text/javascript"></script>
+        <script src="js/auto-search.js"></script>
+	<!-- //autocomplete search -->
+	
+    <!-- Price Trends -->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/price.js"></script>
+    <!-- //Price Trends -->
+    
+	<!-- //here ends scrolling icon -->
+	<script src="js/bootstrap.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

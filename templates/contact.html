@@ -1,0 +1,227 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HP:Contact Us</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/contact.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/menubar.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+	<!-- //font-awesome icons -->
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="main_header">
+			<div class="header_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbart">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="{% static 'images/logo.png' %}" alt="HP"/></a>
+					</div>
+					
+					<div class="collapse navbar-collapse navbar-right" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="buyres.html">Residential</a></li>
+										<li><a href="buycomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rent <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="rentres.html">Residential</a></li>
+										<li><a href="rentcomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lease <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="leaseres.html">Residential</a></li>
+										<li><a href="leasecomm.html">Commercial</a></li>
+									</ul>
+								</li><li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="dealers.html">Dealers</a></li>
+										<li><a href="builders.html">Builders</a></li>
+									</ul>
+								</li>
+								<li><a href="login.html">Login/Register</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars fa-1x" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="profile.html">My Profile</a></li>
+										<li><a href="shortlist.html">My Shortlist</a></li>
+										<li><a href="sell.html">Sell/Rent Property</a></li>
+										<li><a href="news.html">News</a></li>
+										<li><a href="price.html">Price Trends</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				    </div>	
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+    
+	<!--sub_menu-->
+	<div class="second_nav">
+		<div class="scnd_nav_inner">
+			<ul class="scnd_nav_list">
+				<li><a href="index.html">Home</a><span>|</span></li>
+				<li>Contact Us</li>
+			</ul>
+		</div>
+	</div>
+	<!--//sub_menu-->
+    
+	<!-- body -->
+	<div class="contact_body">
+		<div class="container">
+			<h3 class="contact_heading">Contact Us</h3><br/><br/>
+			<div class="contact_inner_info">
+				<div class="col-md-4 contact_info_mail_img_info">
+					<div class="address_grid">
+						<h4>Contact <span>Info</span></h4>
+						<div class="address_grid_inner">
+							<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							<div class="contact_right">
+								<p>Telephone </p><span>+040 66-36-12</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="address_grid_inner">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							<div class="contact_right">
+								<p>Mail </p><a href="#">helloproperties@yahoo.com</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="address_grid_inner">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<div class="contact_right">
+								<p>Location</p><span>Regus Krishe Sapphire, 7th Floor<br>
+									Hello Properties Pvt Ltd,
+								Hyderabad, India.</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="address_grid_icons list">
+							<ul>
+								<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-12 col-xs-12 contact_info_mail_img">
+                    <img src="{% static 'images/regus.jpg' %}" class="img-responsive">
+                </div>
+				<div class="clearfix"> </div>
+				<div class="contact_mail_grid">
+					<form action="#" method="post">
+						<div class="col-md-6 contact_mail_left_grid">
+							<input type="text" name="Name" placeholder="Name" required="">
+							<input type="email" name="Email" placeholder="Email" required="">
+							<input type="text" name="Telephone" placeholder="Telephone" required="">
+							<input type="text" name="Subject" placeholder="Subject" required="">
+						</div>
+						<div class="col-md-6 contact_mail_left_grid">
+							<textarea name="Message" placeholder="Message..." required=""></textarea>
+							<input type="submit" value="Submit">
+						</div>
+						<div class="clearfix">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //body -->
+    
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">Hello Properties</a></h2>
+			<h3>Subscribe To Our Newsletter</h3>
+			<p class="footer_paragraph">Subscribe to our newsletter and we will inform you about newest projects and promotions.</p>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li class="active"><a href="#">Contact Us</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2018 Hello Properties. All rights reserved | Design by <a href="#">Epitychis Info Labs Pvt.Lmtd</a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+	
+	<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+    
+</body>
+</html>
